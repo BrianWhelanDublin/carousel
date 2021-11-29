@@ -1,0 +1,52 @@
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: all 150ms linear;
+}
+
+.carousel-item__wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  /* background-color: #888; */
+  color: #fff;
+}
+.carousel-item__inner {
+  margin: 0 10px;
+  background: #888;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(221, 220, 220);
+  margin: 22px 10px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #888;
+}
+
+.left-arrow,
+.right-arrow {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.right-arrow svg {
+  transform: rotate(-180deg);
+}
